@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script src="dist/bundle.js"></script>
+<script>
+console.log(toolMan)
+// toolMan.date.tick(() => {
+// 	console.log(1)
+// })
+let time = 86400000
+toolMan.tick(() => {
+	time = time - 1000
+	console.log(toolMan.formatCountDown(time))
+})
+</script>
+</body>
+</html>
