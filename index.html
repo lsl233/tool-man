@@ -6,17 +6,28 @@
 </head>
 <body>
 
+<div></div>
+
 <script src="dist/bundle.js"></script>
 <script>
+
 console.log(toolMan)
 // toolMan.date.tick(() => {
 // 	console.log(1)
 // })
 let time = 86400000
-toolMan.tick(() => {
-	time = time - 1000
-	console.log(toolMan.formatCountDown(time))
-})
+// toolMan.tick(() => {
+// 	time = time - 1000
+// 	console.log(toolMan.formatCountDown(time))
+// })
+
+console.log(toolMan.deepGet({
+	name: {
+		age: {
+			bb: 2323
+		}
+	}
+}, 'name.cc'))
 </script>
 </body>
 </html>
