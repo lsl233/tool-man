@@ -1,7 +1,14 @@
+import './tagTester'
+
+import './isFn'
+import './isEmpty'
+import './isBrowser'
+
 import './formatCountDown'
 import './tick'
-import './isBrowser'
+import './scrollTo'
 import './deepGet'
+
 
 import toolMan  from './toolMan'
 

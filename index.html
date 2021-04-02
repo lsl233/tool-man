@@ -3,31 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Title</title>
+	<style>
+		.box img {
+			display: block;
+		}
+	</style>
 </head>
 <body>
+<div class="box">
+	<img src="https://cdn-ssl.meb.com/2021/03/11/1803242935.jpg-o" alt="">
+	<img src="https://cdn-ssl.meb.com/2021/03/11/1803242935.jpg-o" alt="">
+	<img src="https://cdn-ssl.meb.com/2021/03/11/1803242935.jpg-o" alt="">
+	<img src="https://cdn-ssl.meb.com/2021/03/11/1803242935.jpg-o" alt="">
+	<img src="https://cdn-ssl.meb.com/2021/03/11/1803242935.jpg-o" alt="">
+	<img src="https://cdn-ssl.meb.com/2021/03/11/1803242935.jpg-o" alt="">
+	<img src="https://cdn-ssl.meb.com/2021/03/11/1803242935.jpg-o" alt="">
+	<img src="https://cdn-ssl.meb.com/2021/03/11/1803242935.jpg-o" alt="">
+	<img src="https://cdn-ssl.meb.com/2021/03/11/1803242935.jpg-o" alt="">
+	<img src="https://cdn-ssl.meb.com/2021/03/11/1803242935.jpg-o" alt="">
+	<img src="https://cdn-ssl.meb.com/2021/03/11/1803242935.jpg-o" alt="">
+	<img src="https://cdn-ssl.meb.com/2021/03/11/1803242935.jpg-o" alt="">
+	<img src="https://cdn-ssl.meb.com/2021/03/11/1803242935.jpg-o" alt="">
+	<img src="https://cdn-ssl.meb.com/2021/03/11/1803242935.jpg-o" alt="">
+	<img src="https://cdn-ssl.meb.com/2021/03/11/1803242935.jpg-o" alt="">
+	<img src="https://cdn-ssl.meb.com/2021/03/11/1803242935.jpg-o" alt="">
+	<img id="backTop" src="https://cdn-ssl.meb.com/2021/03/11/1803242935.jpg-o" alt="">
+</div>
 
-<div></div>
-
-<script src="dist/bundle.js"></script>
+<script src="dist/toolMan.js"></script>
 <script>
-
-console.log(toolMan)
-// toolMan.date.tick(() => {
-// 	console.log(1)
-// })
-let time = 86400000
-// toolMan.tick(() => {
-// 	time = time - 1000
-// 	console.log(toolMan.formatCountDown(time))
-// })
-
-console.log(toolMan.deepGet({
-	name: {
-		age: {
-			bb: 2323
-		}
+	document.getElementById('backTop').onclick = () => {
+		toolMan.scrollTo(500, 28)
 	}
-}, 'name.cc'))
 </script>
 </body>
 </html>
