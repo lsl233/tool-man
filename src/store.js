@@ -1,15 +1,25 @@
 import toolMan  from './toolMan'
 
 const store = {
-	get(key) {
-		const result = localStorage.getItem(key)
-		return JSON.parse(result)
-	},
-	set(key, value) {
-		if (toolMan.isArray(value) || toolMan.isObject(value)) {
-			value = JSON.stringify(value)
+	get(key, converter) {
+		const value = localStorage.getItem(key)
+		let result
+		if (converter) {
+			result = converter(value)
 		} else {
-			value = value.toString()
+			result = JSON.parse(result)
+		}
+		return result
+	},
+	set(key, value, converter) {
+		if (converter) {
+			value = converter(value)
+		} else {
+			if (toolMan.isArray(value) || toolMan.isObject(value)) {
+				value = JSON.stringify(value)
+			} else {
+				value = value.toString()
+			}
 		}
 		localStorage.setItem(key, JSON.stringify(value))
 	}
