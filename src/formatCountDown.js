@@ -9,8 +9,8 @@ import toolMan from './toolMan'
 toolMan.formatCountDown = function (time, formatTemp = 'DD:HH:MM:SS') {
 	const d = Math.floor(time / (1000 * 60 * 60 * 24))
 	const h = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-	const m = Math.floor(((time % (1000 * 60 * 60)) / (1000 * 60)))
-	const s = Math.floor(((time % (1000 * 60)) / 1000))
+	const m = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60))
+	const s = Math.floor((time % (1000 * 60)) / 1000)
 	const map = {
 		d,
 		h,

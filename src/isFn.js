@@ -1,3 +1,3 @@
 import toolMan from './toolMan'
 
-toolMan.isFn = toolMan.tagTester('function')
+toolMan.isFn = toolMan.tagTester('Function')
