@@ -3,7 +3,7 @@ import './tagTester'
 import './isFn'
 import './isEmpty'
 import './isBrowser'
-import  './isArray'
+import './isArray'
 import './isObject'
 import './isString'
 
@@ -12,8 +12,8 @@ import './tick'
 import './scrollTo'
 import './deepGet'
 import './store'
+import './equal'
 
+import toolMan from './toolMan'
 
-import toolMan  from './toolMan'
-
-export default  toolMan
+export default toolMan
